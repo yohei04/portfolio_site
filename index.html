@@ -284,51 +284,45 @@
 
 <form class="formrun" action="https://form.run/api/v1/r/rtxe237wghnn6lm96fajp25f" method="post">
   <!-- ↓自由に要素を追加・編集することができます -->
-  <div>
-    <label>お名前</label>
-    <input name="お名前" type="text">
+  
+  <div class="items">
+
+    
+    <div class="item">
+      <label class="label">Name</label>
+      <input class="inputs" type="text" name="name" placeholder="絶対">
+    </div>
+    
+    <div class="item">
+      <label class="label">email</label>
+      <input class="inputs" type="email" name="email"  placeholder="記入">
+    </div>
+    
+    
+    
+    <div class="item">
+      <label class="label question">Message</label>
+      <textarea class="inputs"  placeholder="してね"></textarea>
+    </div>
+    
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <button id="contact-button" class="btn-info btn-custom">Submit</button>
+      </div>
+    
   </div>
-
-  <div>
-    <label>メールアドレス [必須]</label>
-    <input name="メールアドレス" type="text" data-formrun-type="email" data-formrun-required>
-    <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
-  </div>
-
-  <div>
-    <label>お問い合わせ [必須]</label>
-    <textarea name="お問い合わせ" data-formrun-required></textarea>
-    <div data-formrun-show-if-error="お問い合わせ">お問い合わせ入力してください</div>
-  </div>
-
-  <!-- ボット投稿をブロックするためのタグ -->
-  <div class="_formrun_gotcha">
-    <style media="screen">
-      ._formrun_gotcha {
-        position: absolute !important;
-        height: 1px;
-        width: 1px;
-        overflow: hidden;
-      }
-    </style>
-    <label for="_formrun_gotcha">If you are a human, ignore this field</label>
-    <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
-  </div>
-
-  <button type="submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">送信</button>
-</form>
-
-
-
-
-    <!-- <div class="row mt-5">
-      <div class="col-lg-12">
-        <div class="form-kerri">
-          <div id="success" class="no-margin-lr" style="display: none;"></div>
-          <form id="contactusform" action="javascript:void(0)" method="post">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="form-group mt-2">
+  </form>
+  
+  
+  
+  <!-- <div class="row mt-5">
+    <div class="col-lg-12">
+      <div class="form-kerri">
+        <div id="success" class="no-margin-lr" style="display: none;"></div>
+        <form id="contactusform" action="javascript:void(0)" method="post">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="form-group mt-2">
                   <input name="name" id="name" type="text" class="form-control" placeholder="Your Name*" required="">
                 </div>
               </div>
