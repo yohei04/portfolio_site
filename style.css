@@ -85,7 +85,7 @@ html, body {
 /* contact */
 .section {
   /* background-color: #f8f9fa!important; */
-  padding-top: 3rem;
+  padding: 3rem 0;
 }
 .text-body {
   color: #000;
@@ -94,6 +94,48 @@ html, body {
   color: #000;
   text-decoration: none;
 }
+
+form {
+  width: 500px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.items {
+  text-align: center;
+
+}
+
+
+input {
+  border: solid 1px #aaa;
+  border-radius:5px;
+}
+
+label {
+  width: 120px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.question {
+  /* float: left; */
+  vertical-align: top;
+}
+
+textarea{
+  border: solid 1px #aaa;
+  border-radius:5px;
+  height: 80px;
+  font-size: 15px;
+}
+
+.inputs {
+  width: 300px;
+}
+
+
+
 
 
 /* footer */
